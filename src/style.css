@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+    height: 30rem;
+    width: 44rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  
+  .button-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+    /* border: 4px solid black; */
+  }
+  
+  .card {
+    background: white;
+    min-width: 41rem;
+    height:30rem;
+    margin-right: 1rem;
+    display: inline-block;
+    /* border: 2px solid red; */
+  }
+
+  @media (max-width: 750px) {
+    .wrapper {
+      height: 28rem;
+      width: 16rem;
+    }
+  
+   
+    .carousel {
+      width: 90%;
+    }
+  
+    .card {
+      min-width: calc(100% - 1rem);
+     
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      
+    }
+  
+  }
